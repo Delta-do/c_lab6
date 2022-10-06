@@ -1,0 +1,8 @@
+﻿  Source.c
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(32,16): warning C4013: gets: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(32,1): warning C4047: инициализация: "char *" отличается по уровням косвенного обращения от "int"
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(34,18): warning C4101: m2: неиспользованная локальная переменная
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(33,7): warning C4101: name2: неиспользованная локальная переменная
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(34,26): warning C4101: g2: неиспользованная локальная переменная
+C:\Users\TEMP.1406-02\source\repos\c_lab6\c_lab6\Source.c(34,10): warning C4101: d2: неиспользованная локальная переменная
+  c_lab6.vcxproj -> C:\Users\TEMP.1406-02\source\repos\c_lab6\x64\Debug\c_lab6.exe

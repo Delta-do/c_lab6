@@ -23,10 +23,13 @@ void t2()
 
 void t3()
 {
+	//char name[5];
 	char name1[20];
 	char name2[20];
 	int d1, d2, m1, m2, g1, g2;
 
+	//fgets(name, 5, stdin); // тогда второй ввод просто не работает
+	
 	puts("¬ведите им€ 1 человека");
 	gets(name1);
 
@@ -38,6 +41,7 @@ void t3()
 
 	//puts("¬ведите им€ 2 человека");
 	//gets(name2); //???????????????
+	//scanf_s("%s", name1); //????????????
 	puts("¬ведите дату рождени€ 2 человека через пробел");
 	scanf_s("%d %d %d", &d2, &m2, &g2);
 	
@@ -46,17 +50,13 @@ void t3()
 
 	if (g1 > g2)
 		printf("%s", name2);
-	else
-		if (g1 < g2)
+	else if (g1 < g2)
 			printf("%s", name1);
-		else
-			if (m1 > m2)
+		else if (m1 > m2)
 				printf("%s", name2);
-			else
-				if (m1 < m2)
+			else if (m1 < m2)
 					printf("%s", name1);
-				else
-					if (d1 > d2)
+				else if (d1 > d2)
 						printf("%s", name2);
 					else
 						printf("%s", name1);

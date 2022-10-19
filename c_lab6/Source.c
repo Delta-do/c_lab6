@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 #include <math.h>
@@ -23,30 +24,18 @@ void t2()
 
 void t3()
 {
-	//char name[5];
 	char name1[20];
 	char name2[20];
 	int d1, d2, m1, m2, g1, g2;
-
-	//fgets(name, 5, stdin); // тогда второй ввод просто не работает
 	
-	puts("¬ведите им€ 1 человека");
-	gets(name1);
+	puts("¬ведите им€ и дату рождени€ 1 человека через пробел");
+	scanf("%s %d %d %d", name1, &d1, &m1, &g1);
 
-	puts("¬ведите им€ 2 человека");
-	gets(name2); 
-
-	puts("¬ведите дату рождени€ 1 человека через пробел");
-	scanf_s("%d %d %d", &d1, &m1, &g1);
-
-	//puts("¬ведите им€ 2 человека");
-	//gets(name2); //???????????????
-	//scanf_s("%s", name1); //????????????
-	puts("¬ведите дату рождени€ 2 человека через пробел");
-	scanf_s("%d %d %d", &d2, &m2, &g2);
+	puts("¬ведите им€ и дату рождени€ 2 человека через пробел");
+	scanf("%s %d %d %d", name2, &d2, &m2, &g2);
 	
-	//printf("%s %d %d %d\n", name1, d1, m1, g1);
-	//printf("%s %d %d %d\n", name2, d2, m2, g2);
+	printf("%s %d %d %d\n", name1, d1, m1, g1);
+	printf("%s %d %d %d\n", name2, d2, m2, g2);
 
 	if (g1 > g2)
 		printf("%s", name2);

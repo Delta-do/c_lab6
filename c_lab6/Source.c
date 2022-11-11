@@ -3,7 +3,7 @@
 #include <locale.h>
 #include <math.h>
 
-void t1() 
+void t1()
 {
 	int year;
 	printf("¬ведите год ");
@@ -19,40 +19,14 @@ void t2()
 	double x;
 	printf("x = ");
 	scanf_s("%lf", &x);
-	printf("F(%.3f) = %.3f", x, x > 3 ? ( - 3. * x + 9) : (double) pow(x, 3) / (pow(x, 2) + 8));
-}
-
-void t3()
-{
-	char name1[20];
-	char name2[20];
-	int d1, d2, m1, m2, g1, g2;
-	
-	puts("¬ведите им€ и дату рождени€ 1 человека через пробел");
-	scanf("%s %d %d %d", name1, &d1, &m1, &g1);
-
-	puts("¬ведите им€ и дату рождени€ 2 человека через пробел");
-	scanf("%s %d %d %d", name2, &d2, &m2, &g2);
-	
-	printf("%s %d %d %d\n", name1, d1, m1, g1);
-	printf("%s %d %d %d\n", name2, d2, m2, g2);
-
-	if (g1 > g2)
-		printf("%s", name2);
-	else if (g1 < g2)
-			printf("%s", name1);
-		else if (m1 > m2)
-				printf("%s", name2);
-			else if (m1 < m2)
-					printf("%s", name1);
-				else if (d1 > d2)
-						printf("%s", name2);
-					else
-						printf("%s", name1);
+	printf("F(%.3f) = %.3f", x, x > 3 ? (-3. * x + 9) : (double)pow(x, 3) / (pow(x, 2) + 8));
 }
 
 void main()
 {
+	char name1[20];
+	char name2[20];
+	int d1, d2, m1, m2, g1, g2;
 	setlocale(LC_ALL, "RUS");
 
 	//1 задание
@@ -63,5 +37,25 @@ void main()
 		  //если x = 4, то f(x) = -3
 
 	//3 задание (10 вариант)
-	t3();
+	puts("¬ведите им€ и дату рождени€ 1 человека через пробел");
+	scanf("%s %d %d %d", name1, &d1, &m1, &g1);
+
+	puts("¬ведите им€ и дату рождени€ 2 человека через пробел");
+	scanf("%s %d %d %d", name2, &d2, &m2, &g2);
+
+	//printf("%s %d %d %d\n", name1, d1, m1, g1);
+	//printf("%s %d %d %d\n", name2, d2, m2, g2);
+
+	if (g1 > g2)
+		printf("%s", name2);
+	else if (g1 < g2)
+			printf("%s", name1);
+		else if (m1 > m2)
+			printf("%s", name2);
+			else if (m1 < m2)
+				printf("%s", name1);
+				else if (d1 > d2)
+						printf("%s", name2);
+					else
+						printf("%s", name1);
 }
